@@ -1,0 +1,47 @@
+\documentclass[11pt,paper=letter]{scrbook}
+\usepackage[english]{babel}
+\usepackage{import}
+\usepackage{subfiles}
+\usepackage{longtable}
+\usepackage{fullpage} 
+\usepackage{epsfig} 
+
+\usepackage[T1]{fontenc} 
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{gensymb}
+\usepackage{geometry}
+
+\renewcommand{\theenumi}{\Alph{enumi}}
+\usepackage{enumitem}
+\usepackage[section]{placeins} %Float Barriers
+
+\begin{document}
+
+\frontmatter
+\import{./}{title.tex}
+
+\clearpage
+\thispagestyle{empty}
+
+\tableofcontents
+
+\mainmatter
+\chapter{First chapter}
+%\import{sections/}{section1-safety}
+\import{sections/}{section1-1}
+%\import{sections/}{section2-1}
+%
+%\chapter{Additional chapter}
+%\input{sections/section2-1.tex}
+%
+%\chapter{Last chapter}
+%\include{sections/section3-1}
+
+\backmatter
+
+%\import{./}{bibliography.tex}
+
+\end{document}
